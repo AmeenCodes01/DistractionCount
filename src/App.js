@@ -3,7 +3,6 @@ import "./App.css";
 
 import Button from "./components/Button";
 import ChooseButton from "./components/ChooseButton";
-import {paste} from "@testing-library/user-event/dist/paste";
 import Table from "./components/Table";
 
 function App() {
@@ -129,7 +128,7 @@ function App() {
   }, [distractions]);
 
   return (
-    <div className="  flex-col   flex h-[100vh] w-[100vw] p-[100px] mb-3 items-center gap-6  ">
+    <div className="  flex-col   flex h-[100vh] w-[100vw] p-[100px] mb-3 items-center gap-6 bg-slate-950 text-white  ">
       {/* 3 buttons ? */}
       <div className="flex-col flex lg:flex-row items-center gap-10 flex-1 ">
         <div>
@@ -161,7 +160,7 @@ function App() {
         <Button text="Distracted" onClick={onAddDistraction} />
       </div>
       <div
-        className="flex-1 w-[90vw]  sm:w-[50%] h-[100%] mb-[20px]  items-start justify-center sm:justify-items-start flex border-4 border-dashed p-2
+        className="flex-1 w-[90vw]  sm:w-[50%] h-[100%] mb-[20px]  items-start justify-center sm:justify-items-start flex border-4 border-dashed p-2 border-slate-300
         sm:self-end sm:justify-end 
        ">
         <Table data={distractions} onDelDistraction={onDelDistraction} />

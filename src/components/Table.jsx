@@ -7,8 +7,8 @@ const rowStyle = "font-mono italic font-light";
 function Table({data, onDelDistraction}) {
   return (
     <table className="table-auto w-[100%] self-start items-start justify-start    ">
-      <thead className=" w-[100%]">
-        <tr className=" ">
+      <thead className=" w-[100%] text-slate-300">
+        <tr className=" text-slate-300">
           {headers.map((header) => (
             <th className=" font-serif" key={header}>
               {header}

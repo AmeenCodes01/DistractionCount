@@ -34,15 +34,19 @@ function ChooseButton({
             />
           ))
         : null}
-      <div className="border-2 flex">
+      <div className="border-[1px] flex border-slate-500">
         <input
           type="text"
-          className=" w-[100%] focus:outline-none px-2 flex"
+          className=" w-[100%] 
+          focus:outline-none 
+          px-2 flex bg-slate-950
+
+          "
           value={value}
           onChange={onChange}
         />
         <button
-          className=" shadow-inner p-[2px] bg-gray-100  self-center h-[100%] "
+          className=" shadow-inner p-[2px] bg-slate-500  self-center h-[100%] "
           onClick={onClick}>
           +
         </button>
